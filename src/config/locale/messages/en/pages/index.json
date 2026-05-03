@@ -1,0 +1,226 @@
+{
+  "metadata": {
+    "title": "Workflow AI - Generate n8n Workflow JSON",
+    "description": "Describe an automation and generate import-ready n8n workflow JSON with GPT-5.5. No sign in required.",
+    "keywords": "n8n workflow generator, n8n workflow json, ai workflow builder, automation generator, GPT-5.5"
+  },
+  "page": {
+    "show_sections": ["hero", "usage", "features", "faq", "cta"],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "n8n workflow generator",
+        "highlight_text": "n8n",
+        "description": "Turn a plain-language automation request into import-ready n8n workflow JSON.<br/>No sign in, no usage limits, full product experience from the first screen.",
+        "announcement": {
+          "badge": "Live demo",
+          "title": "Powered by GPT-5.5 · Generate automation workflows instantly",
+          "url": "/#hero"
+        },
+        "tip": "No account required and no trial limits.",
+        "buttons": [
+          {
+            "title": "View features",
+            "icon": "Workflow",
+            "url": "/#features",
+            "target": "_self",
+            "variant": "outline"
+          },
+          {
+            "title": "FAQ",
+            "icon": "CircleHelp",
+            "url": "/#faq",
+            "target": "_self",
+            "variant": "outline"
+          }
+        ],
+        "workflow_generator": {
+          "eyebrow": "n8n Workflow AI",
+          "input_label": "Automation request",
+          "output_label": "Import-ready workflow JSON",
+          "placeholder": "Example: every morning at 9, read new orders from Google Sheets, filter orders above $500, notify Slack, and log failures to Notion.",
+          "submit_label": "Generate n8n workflow",
+          "loading_label": "Generating",
+          "copy_label": "Copy JSON",
+          "copied_label": "Copied",
+          "download_label": "Download JSON",
+          "empty_output": "Generated JSON will appear here",
+          "error_prefix": "Generation failed",
+          "sample_prompts": [
+            "Every day at 9, read new Google Sheet orders, identify high-value leads, notify Slack, and update Notion CRM.",
+            "When a webhook arrives, validate required fields, call a logistics API, then email the shipment status to the customer.",
+            "Monitor an RSS feed, summarize new articles with AI, translate key points to Chinese, and post them to a Feishu group."
+          ],
+          "stats": [
+            {
+              "value": "0",
+              "label": "sign-in gates"
+            },
+            {
+              "value": "∞",
+              "label": "free runs"
+            },
+            {
+              "value": "JSON",
+              "label": "direct import"
+            }
+          ]
+        },
+        "show_avatars": false,
+        "show_award": false,
+        "image": {
+          "src": "/imgs/features/landing-page.png",
+          "alt": "hero",
+          "width": 1200,
+          "height": 800
+        },
+        "image_invert": {
+          "src": "/imgs/features/admin-dark.png",
+          "alt": "hero",
+          "width": 1200,
+          "height": 800
+        },
+        "background_image": {
+          "src": "/imgs/bg/tree.jpg",
+          "alt": "hero"
+        }
+      },
+      "usage": {
+        "block": "features-step",
+        "id": "usage",
+        "title": "From idea to n8n import in three steps",
+        "description": "The core workflow is designed for speed: describe, generate, import.",
+        "image": {
+          "src": "/imgs/features/1.png",
+          "alt": "usage"
+        },
+        "image_position": "left",
+        "text_align": "center",
+        "items": [
+          {
+            "title": "Describe the automation",
+            "description": "Write the workflow in business language: triggers, conditions, apps, and expected outcomes.",
+            "image": {
+              "src": "/imgs/features/5.png",
+              "alt": "usage"
+            }
+          },
+          {
+            "title": "Generate structured JSON",
+            "description": "GPT-5.5 designs the n8n nodes, parameters, positions, settings, and connections.",
+            "image": {
+              "src": "/imgs/features/6.png",
+              "alt": "usage"
+            }
+          },
+          {
+            "title": "Import into n8n",
+            "description": "Copy or download the workflow JSON and import it into n8n for final credential setup.",
+            "image": {
+              "src": "/imgs/features/7.png",
+              "alt": "usage"
+            }
+          },
+          {
+            "title": "Iterate with context",
+            "description": "Refine the prompt with edge cases, error handling, and extra systems until the flow matches your process.",
+            "image": {
+              "src": "/imgs/features/8.png",
+              "alt": "usage"
+            }
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "features": {
+        "id": "features",
+        "title": "Built for automation builders",
+        "description": "A focused AI SaaS experience for turning requirements into practical n8n workflows.",
+        "items": [
+          {
+            "title": "Natural language to workflow",
+            "description": "Describe a process once and receive an n8n workflow export with nodes, connections, and settings.",
+            "icon": "Workflow"
+          },
+          {
+            "title": "Import-ready JSON",
+            "description": "Outputs are validated as JSON and shaped around the fields n8n expects for workflow imports.",
+            "icon": "Braces"
+          },
+          {
+            "title": "No sign-in gate",
+            "description": "Visitors can test the complete product in the hero area without account creation or trial friction.",
+            "icon": "Unlock"
+          },
+          {
+            "title": "Practical placeholders",
+            "description": "Credentials, tokens, and private values are represented as clear placeholders for safer imports.",
+            "icon": "ShieldCheck"
+          },
+          {
+            "title": "Complex flow planning",
+            "description": "Handles triggers, branching, HTTP calls, transformations, notifications, and failure handling.",
+            "icon": "GitBranch"
+          },
+          {
+            "title": "Multilingual experience",
+            "description": "Product copy, navigation, metadata, and core prompts are structured for English and Chinese users.",
+            "icon": "Languages"
+          }
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "title": "Frequently asked questions",
+        "description": "Everything visitors need to understand before importing a generated workflow.",
+        "items": [
+          {
+            "question": "What does Workflow AI generate?",
+            "answer": "It generates n8n workflow export JSON from a natural-language automation request, including nodes, parameters, workflow settings, and connections."
+          },
+          {
+            "question": "Do users need to sign in?",
+            "answer": "No. The landing page is designed as a full product experience, so visitors can generate, copy, and download workflows without creating an account."
+          },
+          {
+            "question": "Can the JSON be imported directly into n8n?",
+            "answer": "The output is structured as n8n workflow JSON and validated before it is shown. Users still need to connect their own credentials inside n8n after import."
+          },
+          {
+            "question": "What kinds of workflows work best?",
+            "answer": "It works well for webhook flows, scheduled tasks, data enrichment, CRM updates, Slack or email notifications, content pipelines, and API orchestration."
+          },
+          {
+            "question": "Will the model include private credentials?",
+            "answer": "No. The generation prompt avoids real credentials and uses clear placeholders where users need to add API keys, tokens, or OAuth credentials in n8n."
+          },
+          {
+            "question": "How should users get better results?",
+            "answer": "Include the trigger, apps involved, fields to read or write, branching rules, error handling expectations, and the final output destination."
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "Build your next n8n workflow from plain language",
+        "description": "Start in the hero, generate the JSON, and import it into n8n when it matches your process.",
+        "buttons": [
+          {
+            "title": "Try the generator",
+            "url": "/#hero",
+            "target": "_self",
+            "icon": "Workflow"
+          },
+          {
+            "title": "View features",
+            "url": "/#features",
+            "target": "_self",
+            "variant": "outline",
+            "icon": "Sparkles"
+          }
+        ],
+        "className": "bg-muted"
+      }
+    }
+  }
+}

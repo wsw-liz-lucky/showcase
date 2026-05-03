@@ -1,0 +1,226 @@
+{
+  "metadata": {
+    "title": "Workflow AI - n8n 工作流 JSON 生成器",
+    "description": "输入自动化需求，用 GPT-5.5 生成可导入 n8n 的 workflow JSON。无需登录即可使用。",
+    "keywords": "n8n 工作流生成器, n8n workflow json, AI 工作流搭建, 自动化生成器, GPT-5.5"
+  },
+  "page": {
+    "show_sections": ["hero", "usage", "features", "faq", "cta"],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "n8n 工作流生成器",
+        "highlight_text": "n8n",
+        "description": "把一句业务需求直接变成可导入 n8n 的 workflow JSON。<br/>免登录、不限次数，打开页面就能完整体验。",
+        "announcement": {
+          "badge": "在线体验",
+          "title": "GPT-5.5 驱动 · 即刻生成自动化工作流",
+          "url": "/#hero"
+        },
+        "tip": "无需注册账号，也不会限制试用次数。",
+        "buttons": [
+          {
+            "title": "查看能力",
+            "icon": "Workflow",
+            "url": "/#features",
+            "target": "_self",
+            "variant": "outline"
+          },
+          {
+            "title": "常见问题",
+            "icon": "CircleHelp",
+            "url": "/#faq",
+            "target": "_self",
+            "variant": "outline"
+          }
+        ],
+        "workflow_generator": {
+          "eyebrow": "n8n Workflow AI",
+          "input_label": "输入自动化需求",
+          "output_label": "可导入的 Workflow JSON",
+          "placeholder": "例如：每天早上 9 点读取 Google Sheet 新订单，筛选金额大于 500 的订单，发送到 Slack，并把失败记录写入 Notion。",
+          "submit_label": "生成 n8n 工作流",
+          "loading_label": "正在生成",
+          "copy_label": "复制 JSON",
+          "copied_label": "已复制",
+          "download_label": "下载 JSON",
+          "empty_output": "生成后的 JSON 会显示在这里",
+          "error_prefix": "生成失败",
+          "sample_prompts": [
+            "每天 9 点读取 Google Sheet 新订单，筛选高价值客户，发送 Slack 通知，并写入 Notion CRM。",
+            "收到 Webhook 后校验字段，调用第三方 API 查询物流状态，再把结果邮件发送给客户。",
+            "监控 RSS 新文章，交给 AI 摘要，生成中文要点后自动发布到飞书群。"
+          ],
+          "stats": [
+            {
+              "value": "0",
+              "label": "登录门槛"
+            },
+            {
+              "value": "∞",
+              "label": "免费试用"
+            },
+            {
+              "value": "JSON",
+              "label": "直接导入"
+            }
+          ]
+        },
+        "show_avatars": false,
+        "show_award": false,
+        "image": {
+          "src": "/imgs/features/landing-page.png",
+          "alt": "hero",
+          "width": 1200,
+          "height": 800
+        },
+        "image_invert": {
+          "src": "/imgs/features/admin-dark.png",
+          "alt": "hero",
+          "width": 1200,
+          "height": 800
+        },
+        "background_image": {
+          "src": "/imgs/bg/tree.jpg",
+          "alt": "hero"
+        }
+      },
+      "usage": {
+        "block": "features-step",
+        "id": "usage",
+        "title": "三步从想法到 n8n 导入",
+        "description": "核心动线足够直接：描述需求、生成 JSON、导入 n8n。",
+        "image": {
+          "src": "/imgs/features/1.png",
+          "alt": "usage"
+        },
+        "image_position": "left",
+        "text_align": "center",
+        "items": [
+          {
+            "title": "描述自动化流程",
+            "description": "用业务语言写清楚触发器、条件、应用系统和期望结果。",
+            "image": {
+              "src": "/imgs/features/5.png",
+              "alt": "usage"
+            }
+          },
+          {
+            "title": "生成结构化 JSON",
+            "description": "GPT-5.5 会规划 n8n 节点、参数、位置、设置和连接关系。",
+            "image": {
+              "src": "/imgs/features/6.png",
+              "alt": "usage"
+            }
+          },
+          {
+            "title": "导入到 n8n",
+            "description": "复制或下载 workflow JSON，在 n8n 中导入后补充自己的凭证。",
+            "image": {
+              "src": "/imgs/features/7.png",
+              "alt": "usage"
+            }
+          },
+          {
+            "title": "继续迭代细节",
+            "description": "补充异常处理、边界条件和更多系统，让流程贴近真实业务。",
+            "image": {
+              "src": "/imgs/features/8.png",
+              "alt": "usage"
+            }
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "features": {
+        "id": "features",
+        "title": "为自动化搭建者设计",
+        "description": "专注把需求说明转成可落地的 n8n 工作流。",
+        "items": [
+          {
+            "title": "自然语言转工作流",
+            "description": "描述一次业务流程，即可获得包含节点、连接和设置的 n8n workflow JSON。",
+            "icon": "Workflow"
+          },
+          {
+            "title": "可导入 JSON",
+            "description": "输出会先按 JSON 校验，并围绕 n8n 导入所需字段组织。",
+            "icon": "Braces"
+          },
+          {
+            "title": "无需登录门槛",
+            "description": "访客在 hero 区域就能完整生成、复制和下载，不被注册流程打断。",
+            "icon": "Unlock"
+          },
+          {
+            "title": "安全占位符",
+            "description": "凭证、Token 和私密参数会以清晰占位符呈现，导入后再由用户填写。",
+            "icon": "ShieldCheck"
+          },
+          {
+            "title": "复杂流程规划",
+            "description": "支持触发器、分支判断、HTTP 请求、数据转换、通知和失败处理。",
+            "icon": "GitBranch"
+          },
+          {
+            "title": "多语种产品体验",
+            "description": "核心页面、导航、SEO 和说明文案都按中英文结构化维护。",
+            "icon": "Languages"
+          }
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "title": "常见问题",
+        "description": "用户在导入生成工作流前最关心的问题。",
+        "items": [
+          {
+            "question": "Workflow AI 会生成什么？",
+            "answer": "它会根据自然语言需求生成 n8n workflow export JSON，包括节点、参数、工作流设置和连接关系。"
+          },
+          {
+            "question": "用户需要登录吗？",
+            "answer": "不需要。首页就是完整产品体验，访客无需创建账号也可以生成、复制和下载工作流。"
+          },
+          {
+            "question": "生成的 JSON 能直接导入 n8n 吗？",
+            "answer": "输出会按 n8n workflow JSON 结构组织并在展示前校验。导入后用户仍需要在 n8n 中补充自己的凭证。"
+          },
+          {
+            "question": "哪些场景最适合？",
+            "answer": "Webhook 流程、定时任务、数据增强、CRM 更新、Slack 或邮件通知、内容流水线和 API 编排都很适合。"
+          },
+          {
+            "question": "模型会写入真实密钥吗？",
+            "answer": "不会。生成提示会避免真实凭证，涉及 API key、Token 或 OAuth 的地方会使用清晰占位符。"
+          },
+          {
+            "question": "怎样能获得更好的结果？",
+            "answer": "尽量写清楚触发方式、涉及应用、读写字段、分支规则、异常处理和最终输出目标。"
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "用自然语言搭建下一个 n8n 工作流",
+        "description": "从 hero 区域开始生成 JSON，确认符合流程后直接导入 n8n。",
+        "buttons": [
+          {
+            "title": "体验生成器",
+            "url": "/#hero",
+            "target": "_self",
+            "icon": "Workflow"
+          },
+          {
+            "title": "查看能力",
+            "url": "/#features",
+            "target": "_self",
+            "variant": "outline",
+            "icon": "Sparkles"
+          }
+        ],
+        "className": "bg-muted"
+      }
+    }
+  }
+}
