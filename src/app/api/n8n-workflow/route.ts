@@ -7,6 +7,8 @@ import {
   getEvolinkConfig,
 } from '@/shared/services/evolink';
 
+export const maxDuration = 300;
+
 export async function POST(req: Request) {
   try {
     const { prompt } = (await req.json()) as { prompt?: string };
