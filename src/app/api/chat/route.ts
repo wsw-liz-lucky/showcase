@@ -67,7 +67,7 @@ export async function POST(req: Request) {
 
     const configs = await getAllConfigs();
     const provider =
-      requestedProvider || (model === 'gpt-5.5' ? 'evolink' : 'openrouter');
+      requestedProvider || (model === 'gpt-6.1-sol' ? 'evolink' : 'openrouter');
     const evolinkConfig =
       provider === 'evolink' ? getEvolinkConfig(configs) : undefined;
     const openrouterApiKey = configs.openrouter_api_key;

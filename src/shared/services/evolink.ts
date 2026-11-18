@@ -4,7 +4,7 @@ import { config as loadEnvConfig } from 'dotenv';
 import { Configs } from '@/shared/models/config';
 
 const DEFAULT_EVOLINK_BASE_URL = 'https://direct.evolink.ai';
-const DEFAULT_EVOLINK_MODEL = 'gpt-5.5';
+const DEFAULT_EVOLINK_MODEL = 'gpt-6.1-sol';
 
 type EvolinkMessage = {
   role: 'system' | 'user' | 'assistant';

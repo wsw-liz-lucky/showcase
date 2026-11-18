@@ -47,8 +47,8 @@ export function ChatInput({
   // todo: get models from api
   const models: ChatModel[] = [
     {
-      title: 'GPT-5.5',
-      name: 'gpt-5.5',
+      title: 'GPT-6.1 Sol',
+      name: 'gpt-6.1-sol',
     },
   ];
 

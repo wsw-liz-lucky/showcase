@@ -1,8 +1,8 @@
 {
   "metadata": {
     "title": "Workflow AI - n8n 工作流 JSON 生成器",
-    "description": "输入自动化需求，用 GPT-5.5 生成可导入 n8n 的 workflow JSON。无需登录即可使用。",
-    "keywords": "n8n 工作流生成器, n8n workflow json, AI 工作流搭建, 自动化生成器, GPT-5.5"
+    "description": "输入自动化需求，用 GPT-6.1 Sol 生成可导入 n8n 的 workflow JSON。无需登录即可使用。",
+    "keywords": "n8n 工作流生成器, n8n workflow json, AI 工作流搭建, 自动化生成器, GPT-6.1 Sol"
   },
   "page": {
     "show_sections": ["hero", "usage", "features", "faq", "cta"],
@@ -14,7 +14,7 @@
         "description": "把一句业务需求直接变成可导入 n8n 的 workflow JSON。<br/>免登录、不限次数，打开页面就能完整体验。",
         "announcement": {
           "badge": "在线体验",
-          "title": "GPT-5.5 驱动 · 即刻生成自动化工作流",
+          "title": "GPT-6.1 Sol 驱动 · 即刻生成自动化工作流",
           "url": "/#hero"
         },
         "tip": "无需注册账号，也不会限制试用次数。",
@@ -107,7 +107,7 @@
           },
           {
             "title": "生成结构化 JSON",
-            "description": "GPT-5.5 会规划 n8n 节点、参数、位置、设置和连接关系。",
+            "description": "GPT-6.1 Sol 会规划 n8n 节点、参数、位置、设置和连接关系。",
             "image": {
               "src": "/imgs/features/6.png",
               "alt": "usage"

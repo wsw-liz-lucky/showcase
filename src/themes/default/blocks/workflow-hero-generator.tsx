@@ -148,7 +148,7 @@ export function WorkflowHeroGenerator({
               {config?.eyebrow ?? 'n8n Workflow AI'}
             </div>
             <div className="text-muted-foreground text-xs">
-              GPT-5.5 · JSON export
+              GPT-6.1 Sol · JSON export
             </div>
           </div>
         </div>

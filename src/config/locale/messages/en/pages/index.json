@@ -1,8 +1,8 @@
 {
   "metadata": {
     "title": "Workflow AI - Generate n8n Workflow JSON",
-    "description": "Describe an automation and generate import-ready n8n workflow JSON with GPT-5.5. No sign in required.",
-    "keywords": "n8n workflow generator, n8n workflow json, ai workflow builder, automation generator, GPT-5.5"
+    "description": "Describe an automation and generate import-ready n8n workflow JSON with GPT-6.1 Sol. No sign in required.",
+    "keywords": "n8n workflow generator, n8n workflow json, ai workflow builder, automation generator, GPT-6.1 Sol"
   },
   "page": {
     "show_sections": ["hero", "usage", "features", "faq", "cta"],
@@ -14,7 +14,7 @@
         "description": "Turn a plain-language automation request into import-ready n8n workflow JSON.<br/>No sign in, no usage limits, full product experience from the first screen.",
         "announcement": {
           "badge": "Live demo",
-          "title": "Powered by GPT-5.5 · Generate automation workflows instantly",
+          "title": "Powered by GPT-6.1 Sol · Generate automation workflows instantly",
           "url": "/#hero"
         },
         "tip": "No account required and no trial limits.",
@@ -107,7 +107,7 @@
           },
           {
             "title": "Generate structured JSON",
-            "description": "GPT-5.5 designs the n8n nodes, parameters, positions, settings, and connections.",
+            "description": "GPT-6.1 Sol designs the n8n nodes, parameters, positions, settings, and connections.",
             "image": {
               "src": "/imgs/features/6.png",
               "alt": "usage"

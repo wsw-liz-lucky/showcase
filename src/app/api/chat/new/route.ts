@@ -23,7 +23,7 @@ export async function POST(req: Request) {
 
     // todo: get provider from settings
     const provider =
-      body.provider || (body.model === 'gpt-5.5' ? 'evolink' : 'openrouter');
+      body.provider || (body.model === 'gpt-6.1-sol' ? 'evolink' : 'openrouter');
 
     // todo: auto generate title
     const title = message.text.substring(0, 100);
